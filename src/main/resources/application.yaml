@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  aop:
+    auto: true
+  profiles:
+    active: dev
+    include: dubbo,garnet
+  application:
+    servlet:
+    name: ${dubbo.application.name}
+dubbo:
+  application:
+    name: gzgq-gxjh
+debug: false
